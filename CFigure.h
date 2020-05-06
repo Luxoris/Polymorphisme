@@ -16,9 +16,9 @@ public:
 	CFigure(double x = 0, double y = 0, double z = 0) : m_dblx(x), m_dbly(y),
 		m_dblz(z) {}
 	virtual ~CFigure() {}
-	virtual double perimetre() { return 0; }
-	virtual double aire() { return 0; }
-	virtual double volume() { return 0; }
+	virtual double perimetre() = 0 { return 0; }
+	virtual double aire() = 0 { return 0; }
+	virtual double volume() = 0 { return 0; }
 	virtual string description(t_desc type) { return "Figure"; }
 	virtual string toString();
 };
